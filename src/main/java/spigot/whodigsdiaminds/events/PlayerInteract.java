@@ -7,8 +7,6 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-import java.util.Objects;
-
 public class PlayerInteract implements Listener {
 
     @EventHandler
@@ -16,7 +14,7 @@ public class PlayerInteract implements Listener {
         if (event.getAction() == Action.RIGHT_CLICK_BLOCK) {
             return;
         }
-        if (Objects.requireNonNull(event.getClickedBlock()).getType() == Material.DIAMOND_ORE) {
+        if (event.getClickedBlock().getType() == Material.DIAMOND_ORE) {
             Block block = event.getClickedBlock();
             int x = block.getLocation().getBlockX();
             int y = block.getLocation().getBlockY();
