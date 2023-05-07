@@ -1,5 +1,6 @@
 package spigot.whodigsdiaminds.events;
 
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
@@ -16,14 +17,24 @@ public class BlockBreak implements Listener {
             int y = block.getLocation().getBlockY();
             int z = block.getLocation().getBlockZ();
 
-            event.getPlayer().getServer().getConsoleSender().sendMessage("X:" + x +"," + "Y:" + y + "," + "Z:" + z);
+            event.getPlayer().getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[WhoDigsDiaminds] " +
+                    ChatColor.BLUE + "Material: DIAMOND_ORE " + ChatColor.RED + "X:" + x +"," + "Y:" + y + "," + "Z:" + z);
         } else if (event.getBlock().getType() == Material.DEEPSLATE_DIAMOND_ORE) {
             Block block = event.getBlock();
             int x = block.getLocation().getBlockX();
             int y = block.getLocation().getBlockY();
             int z = block.getLocation().getBlockZ();
 
-            event.getPlayer().getServer().getConsoleSender().sendMessage("X:" + x +"," + "Y:" + y + "," + "Z:" + z);
+            event.getPlayer().getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[WhoDigsDiaminds] " +
+                    ChatColor.BLUE + "Material: DIAMOND_ORE " + ChatColor.RED + "X:" + x +"," + "Y:" + y + "," + "Z:" + z);
+        } else if (event.getBlock().getType() == Material.ANCIENT_DEBRIS) {
+            Block block = event.getBlock();
+            int x = block.getLocation().getBlockX();
+            int y = block.getLocation().getBlockY();
+            int z = block.getLocation().getBlockZ();
+
+            event.getPlayer().getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[WhoDigsDiaminds] " +
+                    ChatColor.GOLD + "Material: ANCIENT_DEBRIS " + ChatColor.RED + "X:" + x +"," + "Y:" + y + "," + "Z:" + z);
         }
     }
 }
