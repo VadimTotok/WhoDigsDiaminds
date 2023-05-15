@@ -21,21 +21,21 @@ public class BlockBreak implements Listener {
             event.getPlayer().getServer().getConsoleSender().sendMessage(
                     ChatColor.GRAY + "[WhoDigsDiamonds] " +
                             ChatColor.YELLOW + "Material: DIAMOND_ORE " +
-                            ChatColor.DARK_GREEN + "X:" + x +"," + "Y:" + y + "," + "Z:" + z
+                                ChatColor.DARK_GREEN + "X:" + x +"," + "Y:" + y + "," + "Z:" + z
             );
         }
         if (material.equals(Material.DEEPSLATE_DIAMOND_ORE)) {
             event.getPlayer().getServer().getConsoleSender().sendMessage(
                     ChatColor.GRAY + "[WhoDigsDiamonds] " +
                             ChatColor.YELLOW + "Material: DIAMOND_ORE " +
-                            ChatColor.DARK_GREEN + "X:" + x +"," + "Y:" + y + "," + "Z:" + z
+                                ChatColor.DARK_GREEN + "X:" + x +"," + "Y:" + y + "," + "Z:" + z
             );
         }
         if (material.equals(Material.ANCIENT_DEBRIS)) {
             event.getPlayer().getServer().getConsoleSender().sendMessage(
                     ChatColor.GRAY + "[WhoDigsDiamonds] " +
                             ChatColor.YELLOW + "Material: ANCIENT_DEBRIS " +
-                            ChatColor.DARK_GREEN + "X:" + x +"," + "Y:" + y + "," + "Z:" + z
+                                ChatColor.DARK_GREEN + "X:" + x +"," + "Y:" + y + "," + "Z:" + z
             );
         }
     }
