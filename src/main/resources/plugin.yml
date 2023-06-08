@@ -1,4 +1,4 @@
 name: WhoDigsDiaminds
 version: '${project.version}'
 main: spigot.whodigsdiaminds.WhoDigsDiaminds
-api-version: 1.19
+api-version: 1.20
